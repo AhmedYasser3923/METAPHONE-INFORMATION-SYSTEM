@@ -1,0 +1,100 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+<style>
+    .grid1 {
+        margin-left :auto;
+        margin-right : auto;
+    }
+
+   
+</style>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            height: 26px;
+        }
+        .auto-style3 {
+            height: 27px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table class="auto-style1">
+            <tr>
+                <td style="text-align: center">
+                    <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Italic="False" Font-Overline="False" Font-Size="XX-Large" ForeColor="#006600" Text="Welcome to Metaphone"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="auto-style1">
+                        <tr>
+                            <td>
+                                <asp:HyperLink ID="HyperLink1" runat="server" Font-Bold="True" Font-Size="Medium" ForeColor="Black" NavigateUrl="~/HOME.aspx">HOME</asp:HyperLink>
+                            </td>
+                            <td>
+                                <asp:HyperLink ID="HyperLink2" runat="server" Font-Bold="True" Font-Size="Medium" ForeColor="Black" NavigateUrl="~/Simple Select.aspx">Simple Select</asp:HyperLink>
+                            </td>
+                            <td>
+                                <asp:HyperLink ID="HyperLink3" runat="server" Font-Bold="True" Font-Size="Medium" ForeColor="Black" NavigateUrl="~/aggregate functions.aspx">aggregate functions</asp:HyperLink>
+                            </td>
+                            <td>
+                                <asp:HyperLink ID="HyperLink4" runat="server" Font-Bold="True" Font-Size="Medium" ForeColor="Black" NavigateUrl="~/SUB QUERY.aspx">SUB QUERY</asp:HyperLink>
+                            </td>
+                            <td>
+                                <asp:HyperLink ID="HyperLink5" runat="server" Font-Bold="True" Font-Size="Medium" ForeColor="Black" NavigateUrl="~/Joins.aspx">Joins</asp:HyperLink>
+                            </td>
+                            <td>
+                                <asp:HyperLink ID="HyperLink6" runat="server" Font-Bold="True" Font-Size="Medium" ForeColor="Black" NavigateUrl="~/Signin.aspx">Logout</asp:HyperLink>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style3" style="text-align: center">
+                    <asp:Label ID="Label2" runat="server" Font-Bold="True" ForeColor="Blue" style="text-align: center" Text="Copy rights are reversed 2023" BackColor="White"></asp:Label>
+                </td>
+            </tr>
+        </table>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+    </div>
+    </form>
+</body>
+</html>
